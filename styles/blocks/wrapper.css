@@ -1,0 +1,4 @@
+.wrapper {
+    margin: 0 40px;
+    background-color: var(--wrapper-dark);
+}
