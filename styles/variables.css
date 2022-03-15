@@ -1,8 +1,16 @@
 :root {
+    --border-dark: rgb(255 255 255 / 0.1);
     --backgraund-dark: #000;
     --wrapper-dark: #121212;
+
     --link-dark-secondary: rgb(255 255 255 / 0.5);
-    --link-dark: rgb(255 255 255 / 0.85);
+    --link-dark: rgb(255 255 255 / 1);
     --link-dark-primary: #fc0;
-    --border-dark: rgb(255 255 255 / 0.1);
+
+    --playlists-button-dark: rgb(255 255 255 / 0.64);
+
+    --playlist-button-bg-dark: rgb(24 24 24 / 0.6);
+    --playlist-icon-E: rgb(246 245 243 / 0.05);
+
+    --title-primary: #fc0;
 }
