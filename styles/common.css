@@ -8,4 +8,5 @@
 body {
     background-color: var(--backgraund-dark);
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--link-dark-secondary);
 }
