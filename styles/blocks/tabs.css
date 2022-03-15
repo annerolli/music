@@ -1,0 +1,39 @@
+.tabs__button:hover {
+    color: var(--link-dark-primary);
+}
+
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.tabs__button:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.tabs__button:not(:first-child) {
+    margin-left: 20px;
+}
+
+
+.tabs__button {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    color: var(--link-dark-secondary);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.tabs__button[aria-selected="true"] {
+    color: var(--link-dark);
+    border-bottom: 3px solid var(--link-dark-primary);
+}
+
