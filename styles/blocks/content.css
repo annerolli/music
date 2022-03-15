@@ -1,0 +1,145 @@
+.content__button-icon + .content__button-play {
+    padding-left: 15px;
+}
+
+.content__button:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    display: flex;
+}
+
+.content__main {
+    border-right: 1px solid var(--border-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.content__sidebar {
+    flex-shrink: 0;
+    width: 490px;
+}
+
+.content__title {
+    padding-bottom: 30px;
+}
+
+.content__player-container {
+    text-align: center;
+}
+
+.content__button {
+    display: flex;
+    align-items: center;
+    color: var(--link-dark);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 30px 20px;
+    margin: 100px auto 0;
+    transition: transform 0.2s;
+}
+
+.content__button-play {
+    font-weight: 700;
+    font-size: 28px;
+    opacity: 0.9;
+}
+
+.content__player-subtitle {
+    font-size: 16px;
+    line-height: 128%;
+}
+
+
+.content__playlists-container {
+    top: 0;
+    left: 0;
+    position: relative;
+    padding-top: 70px;
+}
+
+.content__playlists {
+    display: flex;
+    list-style-type: none;
+    overflow-x: scroll;
+    margin: 0 -15px;
+}
+
+.content__playlists::-webkit-scrollbar {
+    display: none;
+}
+
+.content__playlist {
+    display: flex;
+    align-items: stretch;
+    padding: 5px;
+}
+
+.content__playlist .playlist {
+    width: 220px;
+}
+
+.content__playlists-header {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.content__playlists-title {
+    flex-grow: 1;
+}
+
+.content__playlists-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.content__playlists-link-text {
+    padding-bottom: 6px;
+}
+
+.content__playlists-link {
+    color: var(--link-dark);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.content__playlists-link-icon {
+    transition: transform 0.5s;
+}
+
+.content__playlists-header:hover .content__playlists-link-icon {
+    transform: translateX(8px);
+}
+
+.content__playlists-header:hover  .title__hover,
+.content__playlists-header:hover > .content__playlists-link {
+    color: var(--link-dark-primary);
+}
+
+.content__playlists-header + .content__playlists {
+    padding-top: 20px;
+}
+
+
+.content__playlists-promotions {
+    display: flex;
+}
+
+.content__playlist--large .playlist {
+    width: 450px;
+}
+
+.content__playlists-header-promotions:hover .title__hover{
+    color: var(--link-dark);
+    cursor: default;
+}
+
