@@ -1,5 +1,6 @@
 @import "./variables.css";
 @import "./common.css";
+@import "./typography/title.css";
 @import "./blocks/icon-button.css";
 @import "./blocks/wrapper.css";
 @import "./blocks/header.css";
