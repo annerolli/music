@@ -1,0 +1,19 @@
+.sidebar {
+    text-align: center;
+}
+
+.sidebar__playlist {
+    position: sticky;
+    top: 0;
+}
+
+.sidebar__link {
+    display: inline-block;
+}
+
+.sidebar__poster {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
