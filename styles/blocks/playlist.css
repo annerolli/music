@@ -7,6 +7,19 @@
     cursor: pointer;
 }
 
+.playlist-mix {
+    border: none;
+    padding: 0;
+}
+
+.playlist-mix:not(:nth-child(4n)) {
+    margin-right: 25px;
+}
+
+.playlist-mix:nth-child(n+5) {
+    margin-top: 25px;
+}
+
 .playlist:hover {
     border-color: var(--link-dark-primary);
 }
@@ -15,10 +28,15 @@
     visibility: visible;
 }
 
+
 /* Playlist--large */
 
 .playlist--large {
     border: none;
+}
+
+.playlist--large:hover .playlist__subtitle--primary {
+    color: var(--link-dark-primary);
 }
 
 /* Link */
@@ -48,7 +66,7 @@
 
 /* Title-primary */
 
-.playlist__title-primary {
+.playlist__title--primary {
     color: var(--title-primary);
     font-weight: 400;
     font-size: 13px;
@@ -70,16 +88,27 @@
 /* Sibtitle */
 
 .playlist__subtitle {
+    font-size: 13px;
+    color: var(--link-dark-secondary);
     max-height: 60px;
     height: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .playlist__title + .playlist__subtitle {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+/* Subtitle--primary */
+
+.playlist__subtitle--primary {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--link-dark);
+}
+
 /* Cover */
 
 .playlist__cover {
@@ -99,14 +128,26 @@
     width: 100%;
 }
 
+
+.playlist__poster--circle {
+    border-radius: 50%;
+}
+
+/* Stanp */
+
 .playlist__stanp-button {
     display: flex;
 }
 
-.playlist__subtitle,
+
 .playlist__stanp {
     font-size: 13px;
     color: var(--link-dark-secondary);
+}
+
+.playlist__stanp-primary {
+    font-size: 15px;
+    line-height: 22px;
 }
 
 /* Actions */
@@ -122,6 +163,10 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
+}
+
+.playlist__actions--circle {
+    border-radius: 50%;
 }
 
 /* Action */
@@ -146,6 +191,64 @@
 .content__playlists-button--slider-fwd {
     right: -8px;
 } 
+
+/* Playlis--horizontal */
+
+.playlist--horizontal {
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+/* Playlist__poster--small */
+
+.playlist__cover--small {
+    flex-shrink: 0;
+    padding-left: 5px;
+}
+
+.playlist__poster--small {
+    height: 50px;
+    width: 50px;
+}
+
+/* Playlist__info-horizontal */
+
+.playlist__info-horizontal {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+/* Playlist__track */
+
+.playlist__track {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.playlist__name {
+    color: var(--link-dark);
+    text-transform: uppercase;
+
+}
+
+.playlist__artist {
+    color: var(--link-dark-secondary);
+}
 
 /* END */
 
