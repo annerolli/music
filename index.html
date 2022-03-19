@@ -286,8 +286,8 @@
                             <li class="content__playlist">
                                 <div class="playlist">
                                     <div class="playlist__cover">
-                                        <img src="./assets/images/playlists__podcast2.jpg" alt="" class="playlist__poster" />
-                                        <div class="playlist__actions">
+                                        <img src="./assets/images/playlists__podcast2.jpg" alt="" class="playlist__poster playlist__poster--circle" />
+                                        <div class="playlist__actions playlist__actions--circle">
                                             <button class="playlist__action icon-button">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="none" stroke="#fff" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
                                             </button>
@@ -398,15 +398,15 @@
                                     </div>
                                     <div class="playlist__info">
                                         <a href="#" class="playlist__link">
-                                            <h5 class="playlist__title-primary">
+                                            <h5 class="playlist__title playlist__title--primary">
                                                 Плейлист
                                             </h5>
-                                            <div class="playlist__subtitle subtitle">
+                                            <div class="playlist__subtitle playlist__subtitle--primary">
                                                 Новинки: Поп
                                             </div>
                                         </a>
-                                        <span class="playlist__stanp">
-                                            2022
+                                        <span class="playlist__stanp playlist__stanp-primary">
+                                            Безудержные ритмы шумных вечеринок
                                         </span>
                                     </div>
                                 </div>
@@ -421,21 +421,653 @@
                                     </div>
                                     <div class="playlist__info">
                                         <a href="#" class="playlist__link">
-                                            <h5 class="playlist__title-primary">
+                                            <h5 class="playlist__title playlist__title--primary">
                                                 Плейлист
                                             </h5>
-                                            <div class="playlist__subtitle subtitle">
+                                            <div class="playlist__subtitle playlist__subtitle--primary">
                                                 Новинки месяца
                                             </div>
                                         </a>
-                                        <span class="playlist__stanp">
-                                            2022
+                                        <span class="playlist__stanp playlist__stanp-primary">
+                                            Новая русская музыка, с которой стоит провести сезон
                                         </span>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="content__playlists-container">
+                        <a class="content__playlists-header">
+                            <div class="content__playlists-title">
+                                <h2 class=" title title__hover">
+                                    Чарт Яндекс.Музыки
+                                </h2>
+                                <p class="subtitle">
+                                    Треки популярные на Яндекс.Музыке прямо сейчас
+                                </p>
+                            </div>
+                            <div class="content__playlists-link">
+                                <span class="content__playlists-link-text">
+                                    Смотреть всё
+                                </span>
+                                <span class="content__playlists-link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"><path fill="currentColor" d="M9 17.523L10.39 19 17 12l-6.61-7L9 6.477 14.215 12z"/></svg>
+                                </span>
+                            </div>
+                        </a>
+
+                        <div class="content__chart">
+                            <div class="chart">
+                                <ul class="chart__list chart__list-left">
+                                    <li class="chart__track">
+                                       <div class="cell">
+                                           <div class="cell__before">
+                                               <div class="cell__chart">
+                                                   <span class="cell__number">
+                                                        1
+                                                   </span>
+                                                   <span class="cell__rating">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFB300" fill-rule="evenodd" d="M7 10l3 2 2-4.606L14 12l3-2v5a1 1 0 01-1 1H8a1 1 0 01-1-1v-5zm5 4a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                                   </span>
+                                               </div>
+                                               <div class="cell__cover">
+                                                    <img src="./assets/images/chart1.jpg" alt="" class="cell__image" />
+                                                    <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Не скучай
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        ssshhhiiittt!
+                                                    </a>
+                                                </div>
+                                           </div>
+                                           <div class="cell__after">
+                                               <div class="cell__time">
+                                                    3:33
+                                               </div>
+                                               <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                       <div class="cell">
+                                           <div class="cell__before">
+                                               <div class="cell__chart">
+                                                   <span class="cell__number">
+                                                        2
+                                                   </span>
+                                                   <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                   </span>
+                                               </div>
+                                               <div class="cell__cover">
+                                                    <img src="./assets/images/chart2.jpg" alt="" class="cell__image" />
+                                                    <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Злой
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        Самое Большое Простое Число
+                                                    </a>
+                                                </div>
+                                           </div>
+                                           <div class="cell__after">
+                                               <div class="cell__time">
+                                                    3:20
+                                               </div>
+                                               <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                       <div class="cell">
+                                           <div class="cell__before">
+                                               <div class="cell__chart">
+                                                   <span class="cell__number">
+                                                        3
+                                                   </span>
+                                                   <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                   </span>
+                                               </div>
+                                               <div class="cell__cover">
+                                                    <img src="./assets/images/chart3.jpg" alt="" class="cell__image" />
+                                                    <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        ЛЮБОВЬ
+                                                    </a>
+                                                    <span class="cell__secondName">
+                                                        Live
+                                                    </span>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        Земфира
+                                                    </a>
+                                                </div>
+                                           </div>
+                                           <div class="cell__after">
+                                               <div class="cell__time">
+                                                    4:44
+                                               </div>
+                                               <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                       <div class="cell">
+                                           <div class="cell__before">
+                                               <div class="cell__chart">
+                                                   <span class="cell__number">
+                                                        4
+                                                   </span>
+                                                   <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                   </span>
+                                               </div>
+                                               <div class="cell__cover">
+                                                    <img src="./assets/images/chart4.jpg" alt="" class="cell__image" />
+                                                    <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Грустно
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        DenDerty
+                                                    </a>
+                                                </div>
+                                           </div>
+                                           <div class="cell__after">
+                                               <div class="cell__time">
+                                                    2:58
+                                               </div>
+                                               <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </li>
+                                    </li>
+
+                                    <li class="chart__track">
+                                       <div class="cell">
+                                           <div class="cell__before">
+                                               <div class="cell__chart">
+                                                   <span class="cell__number">
+                                                        5
+                                                   </span>
+                                                   <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                   </span>
+                                               </div>
+                                               <div class="cell__cover">
+                                                    <img src="./assets/images/chart5.jpg" alt="" class="cell__image" />
+                                                    <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Красная девятка
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        RSAC
+                                                    </a>
+                                                </div>
+                                           </div>
+                                           <div class="cell__after">
+                                               <div class="cell__time">
+                                                    2:15
+                                               </div>
+                                               <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="chart__list chart__list-right">
+                                    <li class="chart__track">
+                                        <div class="cell">
+                                            <div class="cell__before">
+                                                <div class="cell__chart">
+                                                    <span class="cell__number">
+                                                        6
+                                                    </span>
+                                                    <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="cell__cover">
+                                                     <img src="./assets/images/chart6.jpg" alt="" class="cell__image" />
+                                                     <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Спонсор моего настроения
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        Хадн Дадн
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cell__after">
+                                                <div class="cell__time">
+                                                    2:15
+                                                </div>
+                                                <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                        <div class="cell">
+                                            <div class="cell__before">
+                                                <div class="cell__chart">
+                                                    <span class="cell__number">
+                                                        7
+                                                    </span>
+                                                    <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="cell__cover">
+                                                     <img src="./assets/images/chart7.jpg" alt="" class="cell__image" />
+                                                     <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Иуда
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        Хаски
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cell__after">
+                                                <div class="cell__time">
+                                                    3:01
+                                                </div>
+                                                <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                        <div class="cell">
+                                            <div class="cell__before">
+                                                <div class="cell__chart">
+                                                    <span class="cell__number">
+                                                        8
+                                                    </span>
+                                                    <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="cell__cover">
+                                                     <img src="./assets/images/chart8jpg.jpg" alt="" class="cell__image" />
+                                                     <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        случайная смерть
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        ночные снайперы
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cell__after">
+                                                <div class="cell__time">
+                                                    2:51
+                                                </div>
+                                                <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                        <div class="cell">
+                                            <div class="cell__before">
+                                                <div class="cell__chart">
+                                                    <span class="cell__number">
+                                                        9
+                                                    </span>
+                                                    <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="cell__cover">
+                                                     <img src="./assets/images/chart9.jpg" alt="" class="cell__image" />
+                                                     <div class="cell__action-play">
+                                                         <button class="cell__play icon-button icon-button-track">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                         </button>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Москва
+                                                    </a>
+                                                    <span class="cell__explicit"></span>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        Грязь
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cell__after">
+                                                <div class="cell__time">
+                                                    4:21
+                                                </div>
+                                                <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart__track">
+                                        <div class="cell">
+                                            <div class="cell__before">
+                                                <div class="cell__chart">
+                                                    <span class="cell__number">
+                                                        10
+                                                    </span>
+                                                    <span class="cell__rating">
+                                                        <span class="cell__rating-same"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="cell__cover">
+                                                     <img src="./assets/images/chart10.jpg" alt="" class="cell__image" />
+                                                     <div class="cell__action-play">
+                                                        <button class="cell__play icon-button icon-button-track">
+                                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l10 6-10 6V6z" fill="#222"/></svg>
+                                                        </button>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell__main">
+                                                <div class="cell__title">
+                                                    <a class="cell__name">
+                                                        Звёздная карта
+                                                    </a>
+                                                </div>
+                                                <div class="cell__discription">
+                                                    <a class="cell__artist">
+                                                        ЛСП
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cell__after">
+                                                <div class="cell__time">
+                                                    3:40
+                                                </div>
+                                                <div class="cell__actions">
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="cell__icon" fill="none" stroke="currentColor" stroke-width="2" d="M12 19.587c-1.116-1.104-3.173-3.126-3.917-3.87l-.317-.317c-.912-.914-1.69-1.712-2.335-2.393-1.867-1.975-1.894-4.871-.16-6.695 1.668-1.756 4.341-1.748 6 .017l.729.775.729-.775c1.659-1.765 4.331-1.773 6-.017 1.734 1.824 1.707 4.72-.16 6.695-.644.681-1.424 1.478-2.335 2.393l-.316.316c-.738.737-2.8 2.765-3.918 3.871z"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.606 7.808l-9.798 9.798a7 7 0 009.799-9.799zm-1.414-1.414a7 7 0 00-9.799 9.799l9.8-9.8zM12 21a9 9 0 110-18 9 9 0 010 18z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                                    </button>
+                                                    <button class="cell__action icon-button icon-button--static">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="currentColor"/></svg>
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__playlists-container">
+                        <a class="content__playlists-header">
+                            <div class="content__playlists-title">
+                                <h2 class=" title title__hover">
+                                    Подборки
+                                </h2>
+                                <p class="subtitle">
+                                    Плейлисты, подобранные по настроению или по жанрам
+                                </p>
+                            </div>
+                            <div class="content__playlists-link">
+                                <span class="content__playlists-link-text">
+                                    Смотреть всё
+                                </span>
+                                <span class="content__playlists-link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"><path fill="currentColor" d="M9 17.523L10.39 19 17 12l-6.61-7L9 6.477 14.215 12z"/></svg>
+                                </span>
+                            </div>
+                        </a>
+
+                        <ul class="content__playlists-mix">
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix1.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix2.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix3.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix4.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix5.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix6.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix7.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix8.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix9.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix10.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix11png.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                            </li>
+                            <li class="playlist playlist-mix">
+                                <a class="playlist__cover">
+                                    <img src="./assets/images/mix12.png" alt="" class="playlist__poster" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
 
@@ -457,6 +1089,62 @@
                 </div>
             </aside>
         </div>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__left">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                           <a href="#" class="footer__link">
+                            Правообладателям
+                           </a> 
+                        </li>
+                        <li class="footer__item">
+                           <a href="#" class="footer__link">
+                            Пользовательское соглашение
+                           </a> 
+                        </li>
+                        <li class="footer__item">
+                           <a href="#" class="footer__link">
+                            Справка
+                           </a> 
+                        </li>
+                        <li class="footer__item footer__item-action">
+                           <a href="#" class="footer__link">
+                            Подписаться
+                           </a>
+                           <span class="footer__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M14.7 14l1.3-1.3L12 9l-4 3.7L9.3 14l2.7-2.5 2.7 2.5z" fill="#fff"/></svg>
+                           </span>
+                        </li>
+                    </ul>
+                    <div class="footer__disclaimer">
+                        Сервис Яндекс.Музыка может содержать информацию, не предназначенную для несовершеннолетних
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer__language">
+                        <div class="footer__select-language">
+                            <span class="footer__language-flag">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><g fill-rule="nonzero" fill="none"><path fill="#FFF" d="M0 4h24v8H0z"/><path fill="#D52B1E" d="M0 12h24v8H0z"/><path fill="#0039A6" d="M0 9.333h24v5.333H0z"/></g></svg>
+                            </span>
+                            <span class="footer__language-text">
+                                RU
+                            </span>
+                        </div>
+                        <span class="footer__language-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M6.7 7.9L5.3 9.3 12 16l6.7-6.7-1.4-1.4-5.3 5.3-5.3-5.3z" fill="currentColor"/></svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__static-text">
+                        <span>© 2022</span>
+                        <a href="#" class="footer__link-media" target="_blank">ООО «Яндекс.Медиасервисы»</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     
