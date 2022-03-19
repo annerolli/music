@@ -1,0 +1,188 @@
+/* Cell */
+
+.cell {
+    display: flex;
+    align-items: center;
+    padding: 7px 3px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.cell:hover {
+    border-color: var(--link-dark-primary);
+}
+
+.cell:hover .cell__action-play {
+    visibility: visible;
+}
+
+.cell:hover .cell__time {
+    display: none;
+}
+
+.cell:hover .cell__actions {
+    visibility: visible;
+}
+
+/* Cell before */
+
+.cell__before {
+    flex-shrink: 0;
+    display: flex;
+    padding-right: 20px;
+}
+
+.cell__chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell__number {
+    color: var(--link-dark);}
+
+/* cell rating */
+
+.cell__rating {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.cell__rating-same {
+    padding-top: 5px;
+    display: block;
+    border-bottom: 2px solid #777;
+    width: 8px;
+    margin: 8px auto;
+}
+
+/* cell cover */
+
+.cell__cover {
+    position: relative;
+    display: flex;
+}
+
+.cell__action-play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+/* Cell main */
+
+.cell__main {
+    flex-grow: 1;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Cell name */
+
+.cell__title {
+    display: inline-flex;
+    align-items: center;
+    color: var(--link-dark);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cell__name {
+    flex-grow: 1;
+    padding-right: 5px;
+}
+
+.cell__secondName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: var(--link-dark-secondary);
+}
+
+.cell__title:hover {
+    color: var(--link-dark-primary);
+}
+
+/* Cell artist */
+
+.cell__artist {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cell__artist:hover {
+    color: var(--link-dark-primary);
+}
+
+/* cell__explicit */
+
+.cell__explicit {
+    flex-shrink: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: var(--cell__explicit-bg);
+    color: var(--cell__explicit-text);
+}
+
+.cell__explicit::after {
+    content: 'e';
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/* Cell cover */
+
+.cell__image {
+    display: block;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Cell after */
+
+.cell__after {
+    position: relative;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+
+/* cell actions */
+
+.cell__actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    visibility: hidden;
+}
+
+.cell__action {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+.cell__icon:active {
+    fill: var(--link-dark-primary);
+    stroke: var(--link-dark-primary);
+}
