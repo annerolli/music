@@ -1,0 +1,128 @@
+.footer {
+    width: calc(100% - 490px);
+    padding: 0 30px;
+    border-right: 1px solid var(--border-dark);
+}
+
+.footer__container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    color: var(--link-dark);
+    border-top: 1px solid var(--border-dark);
+}
+
+/* footer__left */
+
+.footer__left {
+    flex-grow: 1;
+}
+
+/* footer__list */
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footer__list + .footer__disclaimer {
+    padding-top: 20px;
+}
+
+/* footer__item */
+
+.footer__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* footer__item-action */
+
+.footer__item-action {
+    display: flex;
+    align-items: center;
+}
+
+/* footer__link */
+
+.footer__link {
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--link-dark);
+}
+
+.footer__link:visited {
+    color: var(--link-dark)
+}
+
+.footer__link:hover,
+.footer__link-media:hover {
+    color: var(--link-dark-primary);
+}
+
+/* footer__disclaimer */
+
+.footer__disclaimer {
+    width: 470px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--link-dark-secondary);
+}
+
+/* footer__center */
+
+.footer__center {
+    margin-top: -5px;
+}
+
+/* footer__language */
+
+.footer__language {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    border: 1px solid var(--border-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--link-dark-secondary);
+}
+
+.footer__language:hover {
+    color: var(--link-dark);
+    border-color: var(--link-dark);
+}
+
+.footer__language:hover .footer__select-language {
+    border-color: var(--link-dark);
+}
+
+.footer__select-language {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-right: 1px solid var(--border-dark);
+}
+
+.footer__language-flag {
+    padding: 0 5px
+}
+
+/* footer__right */
+
+.footer__right {
+    margin-left: 20px;
+}
+
+/* footer link media */
+
+.footer__link-media {
+    text-decoration: none;
+    color: var(--link-dark);
+}
+
