@@ -143,3 +143,21 @@
     cursor: default;
 }
 
+
+/* content__chart */
+
+.content__chart {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* content__playlists-mix */
+
+.content__playlists-mix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 20px;
+}
