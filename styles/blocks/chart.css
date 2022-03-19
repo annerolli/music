@@ -1,0 +1,22 @@
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart__list{
+    width: 50%;
+}
+
+.chart__list-left {
+    padding-right: 20px;
+}
+
+.chart__list-right {
+    padding-right: 20px;
+}
+
+.chart__track {
+    list-style-type: none;
+}
+
+
