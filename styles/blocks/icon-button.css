@@ -14,10 +14,18 @@
     align-items: center;
 }
 
+.icon-button--static {
+    background: none;
+}
+
 .icon-button:hover {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
     transform: scale(1.2);
+}
+
+.icon-button--static:hover {
+    transform: none;
 }
 
 .icon-button--border {
@@ -28,4 +36,10 @@
     background-color: var(--link-dark-primary);
     width: 50px;
     height: 50px;
+}
+
+.icon-button-track {
+    background-color: var(--link-dark-primary);
+    width: 30px;
+    height: 30px;
 }
