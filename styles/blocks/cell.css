@@ -23,7 +23,7 @@
 }
 
 .cell:hover .cell__actions {
-    visibility: visible;
+    display: flex;
 }
 
 /* Cell before */
@@ -82,17 +82,18 @@
 /* Cell main */
 
 .cell__main {
-    flex-grow: 1;
     font-size: 14px;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
+    flex-grow: 1;
+    min-width: 0;
 }
 
 /* Cell name */
 
 .cell__title {
-    display: inline-flex;
-    align-items: center;
+    position: relative;
     color: var(--link-dark);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -104,8 +105,6 @@
 }
 
 .cell__secondName {
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 14px;
     color: var(--link-dark-secondary);
 }
@@ -114,12 +113,14 @@
     color: var(--link-dark-primary);
 }
 
-/* Cell artist */
+/* cell__discription */
 
-.cell__artist {
+.cell__discription {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Cell artist */
 
 .cell__artist:hover {
     color: var(--link-dark-primary);
@@ -132,6 +133,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 2px;
@@ -156,24 +158,18 @@
 /* Cell after */
 
 .cell__after {
-    position: relative;
+    flex-shrink: 0;
     font-size: 14px;
-    padding-left: 20px;
 }
 
 
 /* cell actions */
 
 .cell__actions {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    visibility: hidden;
+    display: none;
 }
 
 .cell__action {
