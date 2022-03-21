@@ -1,0 +1,33 @@
+/* Page */
+
+/* Content */
+
+.page__content {
+    display: flex;
+}
+
+/* Main */
+
+.page__main {
+    border-right: 1px solid var(--border-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* Sidebar */
+
+.page__sidebar {
+    flex-shrink: 0;
+    width: 490px;
+}
+
+/* Footer */
+
+.page__footer {
+    width: calc(100% - 490px);
+    border-right: 1px solid var(--border-dark);
+}

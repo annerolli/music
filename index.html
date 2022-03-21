@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
-    <div class="wrapper">
+<body class="page">
+    <div class="page__wrapper wrapper">
         <header class="header">
             <a class="header__logo" href="#">
                 YaTormoz
@@ -44,8 +44,8 @@
             </div>
         </header>
 
-        <div class="content">
-            <main class="content__main">
+        <div class="page__content content">
+            <main class="page__main">
                 <h1 class="content__title title">
                     Главное
                 </h1>
@@ -1003,65 +1003,65 @@
 
                         <ul class="content__playlists-mix">
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix1.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix2.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix3.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix4.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix5.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix6.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix7.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix8.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix9.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix10.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix11png.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
                             </li>
                             <li class="playlist playlist-mix">
-                                <a class="playlist__cover">
+                                <a class="playlist__cover playlist__cover-mix">
                                     <img src="./assets/images/mix12.png" alt="" class="playlist__poster" />
                                 </a>
                             </li>
@@ -1080,7 +1080,7 @@
                     Настроения и жанры
                 </div>
             </main>
-            <aside class="content__sidebar sidebar">
+            <aside class="page__sidebar sidebar">
                 <div class="sidebar__playlist">
                     <a href="#" class="sidebar__link">
                         <img class="sidebar__poster" src="./assets/images/aside.png" alt="Rock hits">
@@ -1089,7 +1089,7 @@
             </aside>
         </div>
 
-        <footer class="footer">
+        <footer class="page__footer footer">
             <div class="footer__container">
                 <div class="footer__left">
                     <ul class="footer__list">
@@ -1148,25 +1148,6 @@
 
     
 
-    <script>
-        const tabs = document.getElementById('tabs').querySelectorAll('[role="tab"]');
-        const panels = document.querySelectorAll('[role="tabpanel"]');
-
-        tabs.forEach((el) => {
-            el.addEventListener('click', (e) => {
-                tabs.forEach((el) => el.setAttribute('aria-selected', 'false'));
-                e.currentTarget.setAttribute('aria-selected', 'true');
-    
-                const controls = e.currentTarget.getAttribute('aria-controls');
-                panels.forEach((el) => {
-                    if (el.getAttribute('id') === controls) {
-                        el.removeAttribute('hidden');
-                    } else {
-                        el.setAttribute('hidden', '');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="./scripts/tabs.js" type="text/javascript"></script>
 </body>
 </html>
