@@ -1,7 +1,5 @@
 .footer {
-    width: calc(100% - 490px);
     padding: 0 30px;
-    border-right: 1px solid var(--border-dark);
 }
 
 .footer__container {
