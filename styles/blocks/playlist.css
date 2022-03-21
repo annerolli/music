@@ -214,6 +214,10 @@
     width: 50px;
 }
 
+.playlist__cover-mix {
+    display: block;
+}
+
 /* Playlist__info-horizontal */
 
 .playlist__info-horizontal {
