@@ -6,25 +6,6 @@
     transform: scale(1.2);
 }
 
-.content {
-    display: flex;
-}
-
-.content__main {
-    border-right: 1px solid var(--border-dark);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-grow: 1;
-    overflow: hidden;
-}
-
-.content__sidebar {
-    flex-shrink: 0;
-    width: 490px;
-}
-
 .content__title {
     padding-bottom: 30px;
 }
