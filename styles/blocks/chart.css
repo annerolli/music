@@ -19,4 +19,12 @@
     list-style-type: none;
 }
 
+.chart__track:not(:first-child) {
+    margin-top: 5px;
+}
+
+.chart__track:not(:last-child) {
+    margin-bottom: 5px;
+}
+
 
