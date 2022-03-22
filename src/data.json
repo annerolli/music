@@ -1,0 +1,15 @@
+{
+  "_name": "Annerolli",
+  "common": {
+    "nav": [
+      {
+        "title": "Home",
+        "path": "index.html"
+      },
+      {
+        "title": "Podcasts (mock)",
+        "path": "#"
+      }
+    ]
+  }
+}
